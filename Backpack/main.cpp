@@ -34,14 +34,14 @@ int main(int argc, const char * argv[]) {
 
 			int countOperation = 0;
 
-			//начало отсчета времени
+			//РЅР°С‡Р°Р»Рѕ РѕС‚СЃС‡РµС‚Р° РІСЂРµРјРµРЅРё
 			clock_t start = clock();
 
 			generate(inBackpack, weight, value, size, record, recordWeight, maxWeight, size-1, countOperation);
-			// конец отсчета времени
+			// РєРѕРЅРµС† РѕС‚СЃС‡РµС‚Р° РІСЂРµРјРµРЅРё
 			clock_t stop = clock();
 
-			// количество секунд
+			// РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРµРєСѓРЅРґ
 			double seconds = double(stop - start) / CLOCKS_PER_SEC;
 
 			put_number(OutputFile_s, record);
@@ -100,14 +100,14 @@ int main(int argc, const char * argv[]) {
 		for (size_t i = 0; i < size; i++)
 			inBackpack[i] = 0;
 
-		//начало отсчета времени
+		//РЅР°С‡Р°Р»Рѕ РѕС‚СЃС‡РµС‚Р° РІСЂРµРјРµРЅРё
 		clock_t start = clock();
 
 		generate(inBackpack, weight, value, size, record, recordWeight, maxWeight, size-1, countOperation);
-		// конец отсчета времени
+		// РєРѕРЅРµС† РѕС‚СЃС‡РµС‚Р° РІСЂРµРјРµРЅРё
 		clock_t stop = clock();
 
-		// количество секунд
+		// РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРµРєСѓРЅРґ
 		double seconds = double(stop - start) / CLOCKS_PER_SEC;
 
 		cout << "time : " << seconds << endl;
